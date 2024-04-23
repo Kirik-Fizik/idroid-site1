@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDROID</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header">
+        <div>
+            <div class="header__image"></div>
+            <div class="header__title">IDROID</div>
+            <p class="header__text">Разработаем сайт под ваши цели</p>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="userChoice">
+            <div class="userChoice__title">Выберите тип сайта</div>
+            <div class="userChoice__wrapper">
+                <div class="userChoice__block">
+                    <p>Лендинг</p>
+                    <button id="landing_button">Узнать</button>
+                </div>
+                <div class="userChoice__block">
+                    <p>Интернет-магазин</p>
+                    <button id="internet-store_button">Узнать</button>
+                </div>
+                <div class="userChoice__block">
+                    <p>Личный сайт (блог)</p>
+                    <button id="private-site_button">Узнать</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="landing">
+            <div class="landing__title">Выберите тип лендинга</div>
+            <div class="landing__wrapper">
+                <div class="landing__block">
+                    <p>Продающий</p>
+                    <p>Стоимость: 15 000 руб</p>
+                    <p>2 дня</p>
+                    <button id="prod">Выбрать</button>
+                </div>
+                <div class="landing__block">
+                    <p>Подписной</p>
+                    <p>Стоимость: 17 000 руб</p>
+                    <p>3 дня</p>
+                    <button id="podpis">Выбрать</button>
+                </div>
+                <div class="landing__block">
+                    <p>Вирусный</p>
+                    <p>Стоимость: 20 000 руб</p>
+                    <p>6 дней</p>
+                    <button id="virus">Выбрать</button>
+                </div>
+                <div class="landing__block">
+                    <p>Дифференциальный</p>
+                    <p>Стоимость: 11 000 руб</p>
+                    <p>2 дня</p>
+                    <button id="differ">Выбрать</button>
+                </div>
+            </div>
+            <div class="end">
+                <div class="landing__itogo">
+                    <p>Итого: </p>
+                    <p id="landing-price">0</p>
+                    <p>Будет готово через: </p>
+                    <p id="landing-days">0</p> 
+                </div>
+            </div>
+        </section>
+
+        <section class="internet-store">
+            <div class="frontend">
+                <div class="frontend__title">Выберите Frontend-основу для своего сайта</div>
+                <div class="frontend__wrapper">
+                    <div id="frontend__vue" class="frontend__block">
+                        <p>Vue</p>
+                        <p>Стоимость: 20 000 руб</p>
+                        <p>4 дня</p>
+                        <button id="vue">Выбрать</button>
+                    </div>
+                    <div id="frontend__react" class="frontend__block">
+                        <p>React</p>
+                        <p>Стоимость: 50 000 руб</p>
+                        <p>7 дней</p>
+                        <button id="react">Выбрать</button>
+                    </div>
+                    <div id="frontend__angular" class="frontend__block">
+                        <p>Angular</p>
+                        <p>Стоимость: 70 000 руб</p>
+                        <p>11 дней</p>
+                        <button id="angular">Выбрать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="backend">
+                <div class="backend__title">Выберите Backend-основу для своего сайта</div>
+                <div class="backend__wrapper">
+                    <div id="backend__node" class="backend__block">
+                        <p>Node+Express</p>
+                        <p>Стоимость: 70 000 руб</p>
+                        <p>12 дней</p>
+                        <button id="node">Выбрать</button>
+                    </div>
+                    <div id="backend__php" class="backend__block">
+                        <p>PHP</p>
+                        <p>Стоимость: 50 000 руб</p>
+                        <p>10 дней</p>
+                        <button id="php">Выбрать</button>
+                    </div>
+                    <div id="backend__django" class="backend__block">
+                        <p>Django</p>
+                        <p>Стоимость: 70 000 руб</p>
+                        <p>11 дней</p>
+                        <button id="django">Выбрать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="end">
+                <div class="landing__itogo">
+                    <button class="count" id="intercount">Вычислить</button>
+                    <p>Итого: </p>
+                    <p id="inter-price">0</p>
+                    <p>Будет готово через: </p>
+                    <p id="inter-days">0</p>
+                    <button class="delete" id="interdelete">Сбросить</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="private-site">
+            <div class="private-site__title">Предложение для личного сайта</div>
+            <div class="private-site__wrapper">
+                <div class="private-site__block">
+                    <p>Django</p>
+                    <p>Стоимость: 70 000 руб</p>
+                    <p>11 дней</p>
+                    <button id="private">Выбрать</button>
+                </div>
+            </div>
+            <div class="end">
+                <div class="landing__itogo">
+                    <p>Итого: </p>
+                    <p id="private-price">0</p>
+                    <p>Будет готово через: </p>
+                    <p id="private-days">0</p> 
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+<script src="index.js"></script>
+</html>

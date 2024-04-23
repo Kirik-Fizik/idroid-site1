@@ -1,0 +1,326 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: black;
+    padding: 2em 1em 2em 1em;
+}
+.header__title {
+    display: inline-block;
+    background: linear-gradient(to top,
+                    rgb(65, 65, 65) 33%,
+                    rgb(196, 196, 196),
+                    rgb(255, 255, 255));
+            -webkit-background-clip: text;
+            color: transparent;
+    margin-top: .5em;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 2px solid rgb(58, 58, 58);
+    border-right: 2px solid rgb(66, 66, 66);
+    padding: 0.2em 0.2em 0.2em 0.2em; 
+    font-size: 1rem;
+}
+@media (min-width: 450px) {
+    .header__title {
+        font-size: 3rem;
+    }
+}
+.header__text {
+    font-family: 'Roboto';
+    padding: 1em 1.5em 0 0;
+    font-size: 0.9rem;
+    color: white;
+}
+.header__image {
+    width: 100%;
+    height: 100px;
+    background-image: url('Group 9.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+@media (min-width: 450px) {
+    .header__image {
+        height: 500px;
+    }
+}
+
+.userChoice {
+    padding: 1em;
+}
+.userChoice__title {
+    padding: 0 0 1em 0;
+    font-size: 1.3rem;
+    font-style: Roboto;
+    font-weight: 400;
+}
+.userChoice__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 450px) {
+    .userChoice__wrapper {
+        flex-direction: row;
+    }
+}
+.userChoice__block {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1em;
+    margin: .2em;
+    transition: .2s;
+}
+.userChoice__block:hover {
+    transform: scale(0.98);
+}
+@media (min-width: 450px) {
+    .userChoice__block {
+        flex: 1;
+        font-size: 3rem;
+    } 
+}
+.userChoice__block > p {
+    margin-bottom: 1em;
+}
+@media (min-width: 450px) {
+    .userChoice__block > p {
+        font-size: 1.5rem;
+    }
+}
+.userChoice__block > button {
+    background-color: black;
+    color: rgb(92, 91, 91);
+    border: 1px solid rgb(92, 91, 91);
+    display: block;
+    cursor: pointer;
+}
+
+.landing {
+    background-color: rgb(34, 34, 34);
+    padding: 1em;
+    font-family: Roboto;
+    display: none;
+}
+.landing__title {
+    padding: 0 0 1em 0;
+    font-size: 1.3rem;
+    font-style: Roboto;
+    font-weight: 400;
+    color: white;
+}
+.landing__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.landing__block {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1em;
+    margin: .2em;
+    margin-bottom: .5em;
+    transition: .2s;
+}
+.landing__block:hover {
+    transform: scale(.98);
+}
+@media (min-width: 450px) {
+    .landing__wrapper {
+        flex-direction: row;
+    }
+    .landing__block {
+        flex: 1;
+    }
+}
+.landing__block > p {
+    margin-bottom: .5em;
+    font-size: .8rem;
+}
+.landing__block > p:first-child {
+    font-size: 1em;
+    color: red;
+}
+.landing__block > button {
+    background-color: black;
+    color: rgb(92, 91, 91);
+    border: 1px solid rgb(92, 91, 91);
+    display: block;
+    cursor: pointer;
+}
+.landing__itogo {
+    border-radius: .5em;
+    color: white;
+    border: 1px solid white;
+    margin-top: 2em;
+    background-color: rgb(95, 0, 0);
+    padding: 1em;
+}
+
+.internet-store {
+    display: none;
+    background-color: rgb(34, 34, 34);
+    padding: 1em;
+    font-family: Roboto;
+}
+.frontend__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 450px) {
+    .frontend__wrapper {
+        flex-direction: row;
+    }
+    .frontend__block {
+        flex: 1;
+    }
+}
+.frontend__title {
+    padding: 0 0 1em 0;
+    font-size: 1.3rem;
+    font-style: Roboto;
+    font-weight: 400;
+    color: white;
+}
+.frontend__block {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1em;
+    margin: .2em;
+    margin-bottom: .5em;
+    transition: .2s;
+}
+.frontend__block:hover {
+    transform: scale(.98);
+}
+.frontend__block > p {
+    margin-bottom: .5em;
+    font-size: .8rem;
+}
+.frontend__block > p:first-child {
+    font-size: 1em;
+    color: red;
+}
+.frontend__block > button {
+    background-color: black;
+    color: rgb(92, 91, 91);
+    border: 1px solid rgb(92, 91, 91);
+    display: block;
+    cursor: pointer;
+}
+.backend__title {
+    padding: 1em 0 1em 0;
+    font-size: 1.3rem;
+    font-style: Roboto;
+    font-weight: 400;
+    color: white;
+}
+.backend__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 450px) {
+    .backend__wrapper {
+        flex-direction: row;
+    }
+    .backend__block {
+        flex: 1;
+    }
+}
+.backend__block { 
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1em;
+    margin: .2em;
+    margin-bottom: .5em;
+    transition: .2s;
+}
+.backend__block:hover {
+    transform: scale(.98);
+}
+.backend__block > p {
+    margin-bottom: .5em;
+    font-size: .8rem;
+}
+.backend__block > p:first-child {
+    font-size: 1em;
+    color: red;
+}
+.backend__block > button {
+    background-color: black;
+    color: rgb(92, 91, 91);
+    border: 1px solid rgb(92, 91, 91);
+    display: block;
+    cursor: pointer;
+}
+.count {
+    background-color: rgb(255, 0, 0);
+    border: 1px solid black;
+    cursor: pointer;
+    padding: .4em;
+    margin-bottom: 0.2em;
+}
+.delete {
+    background-color: rgb(255, 0, 0);
+    border: 1px solid black;
+    cursor: pointer;
+    padding: .4em;
+    margin-top: 0.2em;
+}
+
+.private-site {
+    display: none;
+    background-color: rgb(34, 34, 34);
+    padding: 1em;
+    font-family: Roboto;
+}
+.private-site__title {
+    padding: 1em 0 1em 0;
+    font-size: 1.3rem;
+    font-style: Roboto;
+    font-weight: 400;
+    color: white;
+}
+@media (min-width: 450px) {
+    .private-site__wrapper {
+        display: flex;
+    }
+}
+.private-site__block {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1em;
+    margin: .2em;
+    margin-bottom: .5em;
+    transition: .2s;
+}
+.private-site__block:hover {
+    transform: scale(.98);
+}
+.private-site__block > p {
+    margin-bottom: .5em;
+    font-size: .8rem;
+}
+.private-site__block > p:first-child {
+    font-size: 1em;
+    color: red;
+}
+.private-site__block > button {
+    background-color: black;
+    color: rgb(92, 91, 91);
+    border: 1px solid rgb(92, 91, 91);
+    display: block;
+    cursor: pointer;
+}
+
+@media (min-width: 450px) {
+    .end {
+        display: flex;
+        justify-content: center;
+    }
+}
